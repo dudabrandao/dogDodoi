@@ -157,7 +157,20 @@ Página de Login
 }
 
 .pag_login #inscreva-se #form-text{
+    text-align: center;
+    padding: 35px;    
+}
+
+.pag_login #inscreva-se #form-formulário{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 25px;    
-    
+    flex-direction: column;
+    padding: 15px;
+}
+
+.pag_login #inscreva-se #form-formulário button{
+    display: block;
+    width: 400px;
+    border-radius: 18px;
 }
