@@ -1,0 +1,24 @@
+    :root{
+        --cor-principal: #D8F1FB82;
+        --cor-topo: #D8F1FB;
+        --cor-branca: white;
+        --cor-preta: black;
+        --cor-rosa: #EA1C81;
+        --cor-beneficios: #FAFBFF;
+        --cor-footer: #D8F1FB82;
+        --padding: 25px;
+    }
+
+    *{
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+    #header{
+        background-color: var(--cor-topo);
+        display: flex;
+        justify-content: space-between;
+        padding: 20px; 
+        align-items: center;
+    }

@@ -1,0 +1,163 @@
+:root{
+    --cor-principal: #D8F1FB82;
+    --cor-topo: #D8F1FB;
+    --cor-branca: white;
+    --cor-preta: black;
+    --cor-rosa: #EA1C81;
+    --cor-beneficios: #FAFBFF;
+    --cor-footer: #D8F1FB82;
+    --padding: 25px;
+}
+/*tirar a margem e espaçamento*/
+*{
+    margin: 0px;/*tirar margem*/
+    padding: 0px;/*tirar espaçamento*/
+    transition: all 1s;/*todos os meus componentes terão transição*/
+    font-family: 'Roboto', sans-serif; /*mudar fonte*/
+    box-sizing: border-box;
+}
+#header{
+    background-color: var(--cor-topo);/*mudar a cor dele*/
+    display: flex;/*deixar a escrita ao lado/flexível*/
+    justify-content: space-between;/*colocar um espaço entre a logo e a escrita*/
+    padding: 20px; /*espaçamento interno*/
+    align-items: center;/*alinhar ao eixo y/centralizar*/
+}
+
+#header nav a{
+    text-decoration: none;/*tira a sublimação embaixo da escrita*/
+    color: var(--cor-preta);/*muda a cor da letra*/
+}
+#header nav a:hover{
+    background-color: var(--cor-rosa);/*quando eu passar o mouse sobre a palavra ela fique
+     grifada com outra cor*/
+    padding: 15px;/*espaçamento interno*/
+    color: var(--cor-branca); /*quando passar o mouse sobre a palavra a letra vai mudar de cor*/
+    border-radius: 20px;/*borda arredondada*/
+    /* font-weight: 700;-pra mudar na grossura da fonte */
+    /* font*weight: bold;-pra deixar a escrita em negrito*/
+}
+
+.marginLateral{
+    margin: 0px 20px; /*espaçamento entre as palavras*/
+}
+
+main #banner{
+    background-image: url("../img/Banner.png"); /*colocando uma imagem de fundo*/
+    height: calc(100vh - 116px); /*fazer com que a imagem preencha a tela toda*/ 
+    /*calc serve para realizar cálculos entre unidades de medida diferentes*/ 
+    background-repeat: no-repeat;
+    background-position: center center;/*centraliza os eixos x e y*/
+    background-size: cover;/*vai tentar preencher a tela toda*/
+    display: flex;/*torna o flexível*/
+    flex-direction: column;/*deixar a escrita em forma de coluna*/
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-rosa); /*mudar a cor da escrita*/
+}
+
+main #banner button{ /*edição do botão*/
+    background-color: var(--cor-rosa);
+    color: var(--cor-branca);
+    padding: 15px; /*grossura da borda do botão*/
+    border: none;
+    border-radius: 20px; /*medida da borda arredondada*/
+}
+
+main #banner button:hover{
+    cursor: pointer;/*mudar o cursor, virar uma mãozinha*/
+}
+
+main #Bem-Vindo{
+    background-color: var(--cor-branca);
+    display: grid; /*divisões de tela*/
+    grid-template-columns: 1fr 1fr;/*repeat: repete a quantidade de fr*/ 
+    /* exemplo: repeat: 20, 1fr*/
+    gap: 20px; /*espaço entre os itens da grid*/
+    padding: 40px;
+    
+}
+
+main #Bem-Vindo #div1 h2{
+    color: var(--cor-rosa);
+
+}
+
+main #Bem-Vindo p{
+    line-height: 140.69%;
+}
+
+main #beneficios{
+    background-color: var(--cor-beneficios);
+}
+
+main #beneficios, main #beneficios #beneficios-nossosBeneficios {
+    color: var(--cor-rosa);
+}
+
+main #beneficios #beneficios-nossosBeneficios,
+main #beneficios #beneficios-servicos,
+main #form #form-text,
+#rodape{
+    text-align: center;
+}
+
+main #beneficios #beneficios-servicos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: var(--padding);
+}
+
+main #form #form-formulário form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+
+main #form #form-formulário form input{
+    display: block;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    width: 350px;
+    margin-bottom: 10px;
+}
+
+main #form #form-formulário form button{
+    padding: 8px;
+    border: none;
+    background-color: var(--cor-rosa);
+    color: var(--cor-branca);
+    border-radius: 10px;
+    width: 350px;
+    cursor: pointer;
+}
+
+main #form #form-formulário{
+    background-image: url(../img/dog.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#rodape{
+    background-color: var(--cor-footer);
+    padding: var(--padding);
+}
+
+/* ==========================================================
+Página de Login
+========================================================== */
+
+.pag_login #header {
+    background-color: var(--cor-topo);
+}
+
+.pag_login #inscreva-se #form-text{
+    align-items: center;
+    padding: 25px;    
+    
+}
